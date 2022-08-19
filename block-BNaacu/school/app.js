@@ -7,6 +7,7 @@ let express = require(`express`);
 let logger = require(`morgan`);
 let path = require(`path`);
 let ejs = require(`ejs`);
+const { urlencoded } = require("express");
 
 // connect databases
 mongoose.connect(`mongodb://localhost/school`, err => {
@@ -20,6 +21,7 @@ app.use(logger(`dev`));
 // middleware
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // set ejs middleware
 app.set(`view engine`, `ejs`);

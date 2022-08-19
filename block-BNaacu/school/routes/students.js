@@ -11,10 +11,10 @@ router.get(`/new`, (req, res) => {
 
 router.post(`/post`, (req, res) => {
   console.log(req.body);
-  // Student.create(req.body, (err, student) => {
-  //   console.log(err);
-  //   res.json({ student: student });
-  // });
+  Student.create(req.body, (err, student) => {
+    console.log(err);
+    res.send(`<h1>${student.name}</h1><br><h2>${student.email}</h2>`);
+  });
 });
 router.get(`/`, (req, res) => {
   Student.find({}, (err, student) => {
