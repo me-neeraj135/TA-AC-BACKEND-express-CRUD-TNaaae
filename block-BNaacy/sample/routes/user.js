@@ -11,9 +11,9 @@ router.get(`/new`, (req, res) => {
 router.post(`/`, (req, res, next) => {
   User.create(req.body, (err, userAdded) => {
     if (err) {
-      res.render(`../views/form.ejs`);
+      res.redirect(`/user/new`);
     } else {
-      res.render(`../views/index.ejs`, {});
+      res.redirect(`/index`);
     }
   });
 });

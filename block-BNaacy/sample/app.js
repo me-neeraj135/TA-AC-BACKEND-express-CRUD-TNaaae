@@ -5,6 +5,8 @@ let logger = require(`morgan`);
 let mongoose = require(`mongoose`);
 let path = require(`path`);
 let userRouter = require(`./routes/user`);
+let indexRouter = require(`./routes/index`);
+
 // connect mongodb
 
 mongoose.connect(`mongodb://localhost/user`, err => {
@@ -30,6 +32,7 @@ app.use(`/admin`, (req, res, next) => {
 });
 // router middleware
 app.use(`/user`, userRouter);
+app.use(`/index`, indexRouter);
 
 // 404 error
 
