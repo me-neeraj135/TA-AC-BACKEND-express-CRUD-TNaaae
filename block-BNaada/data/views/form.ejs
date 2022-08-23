@@ -1,0 +1,26 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styleSheet/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Add User</h1>
+    </header>
+    <div>
+      <form action="/users/new" method="post">
+        <input type="text" name="name" placeholder="add name" />
+        <input type="email" name="email" placeholder="add email" />
+        <input type="number" name="age" placeholder="add age" /><br />
+        <textarea name="about" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="add user" />
+      </form>
+    </div>
+  </body>
+</html>

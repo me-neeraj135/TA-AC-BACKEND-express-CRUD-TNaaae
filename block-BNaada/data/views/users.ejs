@@ -1,0 +1,25 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styleSheet/style.css" />
+    <title>All users</title>
+  </head>
+  <body>
+    <header><h1>Users</h1></header>
+    <% users.forEach(user=>{%>
+    <div class="ulist">
+      <h2>Name:<%= user.name %></h2>
+      <h2>Email:<%= user.email %></h2>
+      <h2>Age:<%= user.age %></h2>
+      <a href="/users/<%= user._id %>">
+        <button>show</button>
+      </a>
+    </div>
+    <%})%>
+  </body>
+</html>

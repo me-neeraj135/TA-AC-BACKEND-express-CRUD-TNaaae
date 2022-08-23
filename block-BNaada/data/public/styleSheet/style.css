@@ -1,0 +1,22 @@
+/** @format */
+
+body {
+  background-color: rgb(228, 141, 115);
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(20, 3, 121);
+}
+
+.ulist {
+  width: 80%;
+  padding-left: 1rem;
+  padding-top: 0.1rem;
+  border-bottom: 1px solid blue;
+  background-color: skyblue;
+  margin-top: 0.2rem;
+}
+p {
+  font-size: 1.5rem;
+}

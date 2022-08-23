@@ -1,0 +1,23 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styleSheet/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ulist">
+      <h2>Name:<%= user.name %></h2>
+      <h2>Email:<%= user.email %></h2>
+      <h2>Age:<%= user.age %></h2>
+      <p>About:<%= user.about.substr(0,100)+ `...`%></p>
+      <button>
+        <a href="/users/delete/<%= user._id %>">delete</a>
+      </button>
+    </div>
+  </body>
+</html>
