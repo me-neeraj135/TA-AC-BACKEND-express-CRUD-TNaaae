@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="usFormHeader">
+      <nav class="usFormNav">
+        <button class="usFormBtn">
+          <a class="usFormAtg" href="/users/all">users Data</a>
+        </button>
+        <button class="usFormBtn">
+          <a class="usFormAtg" href="/"> Back</a>
+        </button>
+      </nav>
+    </header>
+    <main class="formMain">
+      <div class="formBox">
+        <h2 class="formHeading">Edit user</h2>
+        <form action=" /users/<%= users.id %>/update" method="post">
+          <input
+            type="text"
+            name="name"
+            placeholder="add name"
+            value="<%= users.name %>"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder=" add email"
+            value="<%= users.email %>"
+          />
+          <input
+            type="number"
+            name="age"
+            placeholder="add age"
+            value="<%= users.age %>"
+          />
+          <textarea name="details" id="" rows="8" placeholder="add details">
+          <%= users.details %>
+        </textarea
+          >
+
+          <input class="submitBtn" type="submit" value="update user" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
