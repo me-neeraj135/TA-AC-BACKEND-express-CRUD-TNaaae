@@ -1,0 +1,283 @@
+/**
+ * /* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *    License: none (public domain)
+ *
+ * @format
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: bisque;
+  /* background-image: url("../image/flowers-3435886_1920.jpg"); */
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom -style */
+.welcomeMain {
+  height: 100vh;
+  display: grid;
+}
+
+.welcomeHeader {
+  background-color: aquamarine;
+}
+.welcomeBox {
+  display: grid;
+  width: 33rem;
+  height: 20rem;
+  margin: auto;
+  text-align: center;
+  place-content: center;
+  border: 2px solid rgb(39, 136, 63);
+  box-shadow: 0px 0px 5px 5px rgb(64, 129, 51);
+}
+.welcomeWord {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(37, 109, 41);
+  text-transform: capitalize;
+  /* text-shadow: 4px 0 5px rgb(78, 84, 104); */
+}
+.addUser {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: white;
+
+  background-color: rgb(61, 114, 56);
+}
+/* user form style */
+
+.usFormHeader {
+  padding: 1rem;
+  background-color: rgb(135, 148, 170);
+}
+.usFormNav {
+  display: flex;
+  justify-content: space-between;
+}
+.usFormBtn {
+  padding: 0.4rem 1rem;
+  /* font-size: 1.5rem; */
+  font-weight: 600;
+  outline: none;
+  border: 1px solid green;
+  background-color: rgb(72, 177, 98);
+  border-radius: 2px;
+}
+.usFormAtg {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+/* fill form style */
+
+.formMain {
+  display: grid;
+  height: 80vh;
+  place-content: center;
+}
+
+.formBox {
+  width: 30rem;
+  padding: 1rem;
+
+  border: 2px solid #8794aa;
+}
+.formHeading {
+  text-align: center;
+  color: #8794aa;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid #9eb0cf;
+  border-radius: 3px;
+}
+textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+  padding: 0.5rem;
+  border: 2px solid #9eb0cf;
+}
+.submitBtn {
+  color: #362add;
+  font-weight: 900;
+}
+/* all users list-style */
+
+.allUserList {
+  text-align: center;
+  padding: 1rem;
+}
+
+.allUserListHeading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #8794aa;
+
+  text-transform: capitalize;
+}
+.usersList {
+  font-size: 2rem;
+  color: #4488b6;
+}
+.allUserBox {
+  padding: 0.5rem;
+  border-bottom: 2px solid #8794aa;
+}
+.allUserHTwo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ce6925;
+}
+.htSpan {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #021f50;
+}
+.editBtn {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  background-color: #56b262;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(12, 214, 39);
+  margin-top: 0.5rem;
+}
+.editAtg {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
