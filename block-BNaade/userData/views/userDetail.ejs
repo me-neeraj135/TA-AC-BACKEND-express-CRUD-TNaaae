@@ -1,0 +1,52 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="usFormHeader">
+      <nav class="usFormNav">
+        <button class="usFormBtn">
+          <a class="usFormAtg" href="">users Data</a>
+        </button>
+        <button class="usFormBtn">
+          <a class="usFormAtg" href="/"> Back</a>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="allUserList">
+        <h1 class="allUserListHeading">
+          <a class="usersList" href="/users/all">user list</a>
+        </h1>
+      </div>
+      <div class="allUserBox">
+        <h2 class="allUserHTwo">
+          Name:
+          <span class="htSpan"> <%= users.name %></span>
+        </h2>
+        <h2 class="allUserHTwo">
+          Email:
+          <span class="htSpan"> <%= users.email %> </span>
+        </h2>
+        <h2 class="allUserHTwo">
+          Age:
+          <span class="htSpan"> <%= users.age%> </span>
+        </h2>
+        <h2 class="allUserHTwo">
+          Details:
+          <span class="htSpan"> <%= users.details +`.`%> </span>
+        </h2>
+        <button class="editBtn">
+          <a class="editAtg" href="/users/<%= users.id %>/edit">Edit</a>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
