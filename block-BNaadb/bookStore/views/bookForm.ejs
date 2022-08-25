@@ -1,0 +1,41 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>BookForm</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="Btn">
+          <a href="/books/find">Books </a>
+        </button>
+        <button class="Btn">
+          <a href="/books/">Back</a>
+        </button>
+      </nav>
+    </header>
+    <main class="formMain">
+      <div class="bookForm">
+        <h1></h1>
+        <form action="/books/create" method="post">
+          <input type="text" name="title" placeholder="add title" />
+          <input type="text" name="author" placeholder="author" />
+          <textarea
+            name="descriptions"
+            id=""
+            rows="10"
+            placeholder="add descriptions"
+          ></textarea>
+          <input type="number" name="price" placeholder="add price" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
