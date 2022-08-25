@@ -8,7 +8,7 @@ let route = express.Router();
 route.post(`/create`, (req, res, next) => {
   Book.create(req.body, (err, book) => {
     if (err) return next(err);
-    res.render(`book`, { books: book });
+    res.render(`book`, { book: book });
   });
 });
 
