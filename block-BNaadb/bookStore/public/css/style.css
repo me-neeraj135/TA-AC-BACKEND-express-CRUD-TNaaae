@@ -1,0 +1,258 @@
+/**
+ * /* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *    License: none (public domain)
+ *
+ * @format
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom- style */
+
+header {
+  padding: 1rem;
+  background-color: lightblue;
+}
+.bookBox {
+  width: 70%;
+  padding: 1rem;
+}
+/* index-page */
+
+.welcomeHeading {
+  font-size: 2rem;
+  color: rgb(6, 6, 77);
+  text-align: center;
+  text-transform: capitalize;
+}
+.welcomeMain {
+  height: 90vh;
+  background-color: lightblue;
+}
+
+.welcomeBox {
+  display: grid;
+  place-content: center;
+  max-width: 1600px;
+  width: 80%;
+  height: 20rem;
+  margin: auto;
+  color: rgb(6, 6, 77);
+  border: 4px solid rgb(6, 6, 77);
+  box-shadow: 0px 0px 50px 5px rgb(6, 6, 77) inset;
+}
+.welcmH2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.findBtn {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: rgb(6, 6, 77);
+  margin-top: 1rem;
+}
+.findAtg {
+  display: block;
+  width: 100%;
+
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+/* book form style */
+.formMain {
+  display: grid;
+  place-content: center;
+  max-width: 1600px;
+  width: 100%;
+  height: 90vh;
+  border: 1px solid black;
+}
+.bookForm {
+  width: 70%;
+  border: 1px solid black;
+
+  margin: auto;
+  padding: 1rem;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+
+  margin: 0.5rem 0;
+}
+/* book */
+.bookBox {
+  width: 100%;
+  background-color: lightgray;
+  border-bottom: 1px solid rgb(184, 24, 24);
+  margin: 0.5rem 0;
+  padding: 0.5rem 2rem;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  color: brown;
+  margin-bottom: 1rem;
+}
+.author {
+  font-weight: bold;
+  color: rgb(38, 17, 172);
+}
+.desP {
+  margin: 0.5rem 0;
+}
+.descriptions {
+  color: brown;
+  font-weight: bold;
+}
+.priceH2 {
+  margin: 1rem 0;
+}
+.price {
+  font-weight: bold;
+  color: brown;
+}
+.btnD {
+  background-color: rgb(185, 34, 34);
+}
+.delete {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
