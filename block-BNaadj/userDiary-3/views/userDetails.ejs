@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>user Details</title>
+  </head>
+  <body>
+    <header>
+      <h1>user details</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h2>name:<%= user.name %></h2>
+        <h2>email:<%= user.email %></h2>
+        <h2>age:<%= user.age %></h2>
+        <h3>address:<%= user.address %></h3>
+        <p>bio:<%= user.bio %></p>
+        <p>hobbies:<%= user.hobbies %></p>
+        <button>
+          <a href="/user/<%= user.id %>/edit"> edit </a>
+        </button>
+
+        <button>
+          <a href="/user/<%= user.id %>/delete"> delete </a>
+        </button>
+
+        <button>
+          <a href="/user/list">list users</a>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
